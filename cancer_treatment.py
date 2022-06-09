@@ -1,8 +1,8 @@
 import streamlit as st
-from scipy.integrate import odeint
-import matplotlib.pyplot as plt
 import numpy as np
 import altair as alt
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
 import math
 import random
 import pandas as pd

@@ -9,8 +9,10 @@ import pandas as pd
 
 ## Main streamlit page
 st.title("Adaptive Therapy Simulation: Cancer Treatment and Resistance")
-st.write("Think Tank Matematicas 2022")
+st.write("Blue: Sensitive cell population, Red: Resistant cell population")
+st.write("Green: Total tumor cell poulation")
 st.write()
+st.sidebar.write("Think Tank Matematicas 2022")
 st.sidebar.write('Hello! In this project, we are simulating our ODE model for populations of sensitive and resistance cell in adaptive therapy.')
 st.sidebar.write("Our Models:")
 st.sidebar.latex(r'''

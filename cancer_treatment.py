@@ -35,7 +35,7 @@ st.sidebar.latex(r'''
     x = \text{ Sensitive cell population}\\
     y = \text{ Resistant cell population}\\
     r_2 > r_1 > 0 = \text{ Growth rate of cells}\\
-    d_1(t) > 0.5 = \text{ Death reate of cells}\\
+    d_1(t) > 0.5 = \text{ Death reate of sensitive cells}\\
     k = \text{ Carrying capacity}
 ''')
 st.sidebar.write('What is Adaptive Therapy? - Adaptive therapy is a type of cancer treatment that aims to maintain sesntive cell populations to limit resistant cell growth. Treatment features decreasing does over time and increasing efficacy of larger drug doeses at later time points.')

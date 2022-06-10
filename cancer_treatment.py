@@ -14,10 +14,10 @@ st.write()
 st.sidebar.write('Hello! In this project, we are simulating our ODE model for populations of sensitive and resistance cell in adaptive therapy.')
 st.sidebar.write("Our Models:")
 st.sidebar.latex(r'''
-    \dot{x} = r_1x(1-\frac{x+y}{k}) - d(t)x
+    \dot{x} = 1.2x(1-\frac{x+y}{k}) - d(t)x
 ''')
 st.sidebar.latex(r'''
-    \dot{y} = r_2y(1 - \frac{x+y}{k}) - 0.5y
+    \dot{y} = 0.8y(1 - \frac{x+y}{k}) - 0.5y
 ''')
 d_rate = st.sidebar.slider(
     'Select the value of death rate d:',
@@ -158,7 +158,7 @@ z0 = [100, 10]
 timeElapsed = 0
 #empty dataframe
 df3 = pd.DataFrame(columns = ['time', 'sensitive_cells', 'resistant_cells'])
-for x in range(1, 100):
+for x in range(1, 1000):
     if z0[0] <= z0[1]:
         def treat(z, t):
             x, y = z

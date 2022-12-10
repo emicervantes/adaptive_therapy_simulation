@@ -12,15 +12,31 @@ $$\dot{x} = r_1x(1-\fraac{x+y}{k}) - d_1(t)x$$
 
 $$\dot{x} = r_2y(1-\fraac{x+y}{k}) - d_2(t)y$$
 
-x = susceptible cell popuylation, y = resistant tumor cell population, $r_2>r_1>0$ = growth rate of cells (1 = susceptible cell, 2 = resistant cell), $d_1(t)>d_2>0 = death rate of cell, k = carrying capacity$
+x = susceptible cell popuylation, y = resistant tumor cell population, $r_2>r_1>0$ = growth rate of cells (1 = susceptible cell, 2 = resistant cell), $d_1(t)>d_2>0$ = death rate of cell, k = carrying capacity
 
-Therapy Conditions:
+Therapy Conditions:Let $x(t) = 100$ and $y(t) = 10$
 
 1. Let $N(t)$ denote total population of cells such that $N(t) = x(t) + y(t)$
 
 $$d(t) = 
       \begin{cases}
-      1 & \text{if bank $i$ issues ABs at time $t$}\\
-      2 & \text{if bank $i$ issues CBs at time $t$}\\
-      0 & \text{otherwise}
+      d & \text{if $N(t) \geq 0.2*110$}\\
+      0.5 & \text{if $N(t) < 110$ or $y(t) > 50$}\\
     \end{cases} $$
+    
+2. 
+
+$$d(t) = 
+      \begin{cases}
+      d & \text{if $x(t) > y(t)$}\\
+      0.5 & \text{if $x(t) \leq y(t)$}\\
+    \end{cases} $$
+    
+3.
+
+$$d(t) = 
+      \begin{cases}
+      (t+d)^2 & \text{if $x(t) \geq y(t)$}\\
+      0.5 & \text{if $x(t) \leq y(t)$}\\
+    \end{cases} $$
+

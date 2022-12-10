@@ -8,15 +8,15 @@ Simulation Link: https://emicervantes-adaptive-therapy-simulatio-cancer-treatmen
 
 ODE Models: Let $\dot{x}$ denotes the population of susceptible tumor cells, and let $\dot{y}$ denotes the population of resistant tumor cells:
 
-$$\dot{x} = r_1x(1-\fraac{x+y}{k}) - d_1(t)x$$
+$$\dot{x} = r_1x(1-\frac{x+y}{k}) - d_1(t)x$$
 
-$$\dot{x} = r_2y(1-\fraac{x+y}{k}) - d_2(t)y$$
+$$\dot{x} = r_2y(1-\frac{x+y}{k}) - d_2(t)y$$
 
 x = susceptible cell popuylation, y = resistant tumor cell population, $r_2>r_1>0$ = growth rate of cells (1 = susceptible cell, 2 = resistant cell), $d_1(t)>d_2>0$ = death rate of cell, k = carrying capacity
 
-Therapy Conditions:Let $x(t) = 100$ and $y(t) = 10$
+Therapy Conditions:Let $x(t) = 100$ and $y(t) = 10$ and Let $N(t)$ denote total population of cells such that $N(t) = x(t) + y(t)$
 
-1. Let $N(t)$ denote total population of cells such that $N(t) = x(t) + y(t)$
+1. 
 
 $$d(t) = 
       \begin{cases}

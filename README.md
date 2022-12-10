@@ -1,6 +1,6 @@
 # Adaptive Therapy Simulation: Cancer Treatment and Development of Resistance
 
-![](https://github.com/emicervantes/adaptive_therapy_simulation/sim-screenshot.png?raw=true)
+![](https://github.com/emicervantes/adaptive_therapy_simulation/blob/main/sim-screenshot.png?raw=true)
 
 This project focuses on building simulation website that enables user to see the optimized condition for adaptive therapy. Adaptive therapy is a type of cancer treatment that undergoes period of chemo therapy followed by "drug holiday", period of time when patients stop taking treatment. This type of treatment is effective in stabilizing the growth rate of tumor cell. We are using population growth ODE models for both susceptible/sensitive tumor cells and resistant tumor cells, with three different therapy conditions.
 

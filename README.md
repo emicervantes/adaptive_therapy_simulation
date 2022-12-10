@@ -10,7 +10,7 @@ ODE Models: Let $\dot{x}$ denotes the population of susceptible tumor cells, and
 
 $$\dot{x} = r_1x(1-\frac{x+y}{k}) - d_1(t)x$$
 
-$$\dot{x} = r_2y(1-\frac{x+y}{k}) - d_2(t)y$$
+$$\dot{y} = r_2y(1-\frac{x+y}{k}) - d_2(t)y$$
 
 x = susceptible cell popuylation, y = resistant tumor cell population, $r_2>r_1>0$ = growth rate of cells (1 = susceptible cell, 2 = resistant cell), $d_1(t)>d_2>0$ = death rate of cell, k = carrying capacity
 
